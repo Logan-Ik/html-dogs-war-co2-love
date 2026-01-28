@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>how much CO2 do dogs produce</title>  
+                <style>
+        body {
+            background-color: rgb(223, 187, 187);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h4, footer, footer {
+            text-align: center;
+            color: whitesmoke;
+        }
+        h1 {
+            background-color: #0d1be4;
+            padding: 10px;
+        }
+        h4 {
+            background-color: #000;
+            padding: 5px;
+        }
+        ul {
+            color: whitesmoke;
+            padding: 15px;
+            list-style-position: inside;
+        }
+        a {
+            color: rgb(93, 156, 130);
+        }
+        .link-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;    
+    background-color: #000;
+    padding: 10px;
+    color: white;
+}
+       .calculator {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .calculator input {
+            padding: 8px;
+            margin: 10px 0;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .calculator button {
+            padding: 10px;
+            width: 100%;
+            background-color: #2e3488;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .calculator button:hover {
+            background-color: #1f2460;
+        }
+        footer {
+            background-color: #2e3488;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        div.card {
+            background-color: #2e3488;  
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+        }
+
+                </style> 
+    </head> 
+            <body>
+    <main>
+                    <nav>
+                        <a href="dogs.html">Dogs and what they can do</a>
+                        <span>This is not a serious issue</span>
+                        <a href="Dog Army program.html">JOIN THE DOG ARMY</a>
+                    </nav>
+                        <p class="intro">this website is to show how much CO2 dogs produce and spread awarness</p>
+                        <h1 >how much CO2 dogs produce</h1>
+                    <div class="card">
+            <h4>Dogs and their carbon pawprint</h4>
+            <ul style="background-color: #8a65a8; padding: 15px; margin: 10px;">   
+                <li>dogs of approximatly 10-20kg produce around 2.1kg of CO2 per day</li>
+                <li>Average dogs are responsible for producing 770kg CO2 per year</li>
+                <li>This is mainly due to their diet</li>
+            </div>
+            </ul>
+                    <div class="card">
+                <h4>how would you decrease their CO2 output </h4>
+            <ul style="background-color: #8a65a8; padding: 15px; margin: 10px;">`
+                <li>To reduce the carbon footprint of dogs, owners can consider reducing overfeeding </li>
+                <li>choosing sustainable dog food options</li>
+                <li>Reduce Red Meat</li>
+                <li>Explore alternative protein sources</li>
+            </ul>
+        </div>
+    </main>
+      <div class="calculator">
+            <h2>Simple CO₂ Estimator</h2>
+            <p>Enter your dog's weight (kg) to estimate yearly CO2 impact:</p>
+            <input type="number" id="weight" placeholder="Dog weight in kg">
+            <button onclick="calculateCO2()">Calculate</button>
+            <p id="result"></p>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Sources</h3>
+        <ul>
+            <li><a href="https://ecocart.io/sustainable-dog-food-brands">EcoCart – Sustainable Dog Food Brands</a></li>
+            <li><a href="https://www.petsmag.co.uk/cavalier-king-charles-spaniel-named-greenest-dog-breed">Greenest Dog Breeds</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function calculateCO2() {
+            const weight = document.getElementById("weight").value;
+            const result = document.getElementById("result");
+
+            if (weight <= 0) {
+                result.textContent = "Please enter a valid weight.";
+                return;
+            }
+
+            const yearlyCO2 = weight * 38.5; 
+            result.textContent = `Estimated yearly CO₂ output: ${yearlyCO2.toFixed(1)} kg of CO2`;
+        }
+    </script>
+
+</body> 
+</html>
